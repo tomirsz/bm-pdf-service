@@ -8,6 +8,3 @@ spring:
     name: pdf-service
   profiles:
     active: ${PROFILE}
-
-eureka:
-  client: ${eureka-client}
