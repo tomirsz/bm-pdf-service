@@ -1,0 +1,13 @@
+spring:
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL}
+    user:
+      name: ${USERNAME}
+      password: ${PASSWORD}
+  application:
+    name: pdf-service
+  profiles:
+    active: ${PROFILE}
+
+eureka:
+  client: ${eureka-client}
